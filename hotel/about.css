@@ -1,0 +1,247 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.back {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#back-btn {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Header section */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff9900;
+    color: white;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.header h2 {
+    font-size: 1.5em;
+}
+
+.star {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.star i {
+    font-size: 24px;
+    color: gold;
+}
+
+.bigbox {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome, .aboutus {
+    margin: 20px 0;
+}
+
+.welcome h2, .aboutus h2 {
+    font-size: 2em;
+    color: #ff9900;
+    text-align: center;
+}
+
+.welcome p, .aboutus p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Team member section */
+.chef {
+    margin: 50px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.chef-heading h1 {
+    font-size: 2.5em;
+    color: #ff9900;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.chef1, .chef2, .chef3 {
+    text-align: center;
+}
+
+.chef-img {
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.profile h2 {
+    margin: 10px 0;
+}
+
+.small {
+    color: grey;
+    font-size: 1em;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #ff9900;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Review section */
+.review {
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-heading h1 {
+    font-size: 2.5em;
+    color: #ff9900;
+    text-align: center;
+}
+
+.review-heading h2 {
+    text-align: center;
+    color: grey;
+    margin-top: 10px;
+}
+
+.review-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.client1, .client2, .client3 {
+    width: 30%;
+    text-align: center;
+}
+
+.client-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client {
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-right: 10px;
+}
+
+.client-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.client-info h6 {
+    margin: 0;
+    color: grey;
+}
+
+/* Footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer0, .footer1 {
+    margin-bottom: 20px;
+}
+
+.footer0 h1, .footer1 h1 {
+    font-size: 1.8em;
+    color: #ff9900;
+}
+
+.social-media i {
+    font-size: 24px;
+    color: #ff9900;
+    margin: 0 10px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer2 .product {
+    text-align: center;
+}
+
+.footer2 .heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer2 .div {
+    margin: 5px 0;
+    color: grey;
+}
+
+.footer3 {
+    margin-top: 20px;
+}
+
+.footer3 h4 {
+    display: inline;
+    color: #ff9900;
+}
+
+@media screen and (max-width: 768px) {
+    .profile, .review-profile, .footer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chef1, .chef2, .chef3, .client1, .client2, .client3 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

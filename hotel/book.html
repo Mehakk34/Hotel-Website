@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-container">
+            <button class="back"><a id="back-btn" class='fas fa-arrow-circle-left' href="./rooms.html"></a></button>
+        </div>
+    </header>
+    <main>
+        <div class="heading">
+            <h2>Book Now</h2>
+            <h1>Free & Fast</h1>
+        </div>
+        <div class="box" id="myform">
+            <div class="left-box">
+                <div class="upper">
+                    <input type="text" name="name" placeholder=" Enter your Name" class="upper-input">
+                    <input type="text" name="room-type" placeholder=" Enter Room Type" class="upper-input">
+                    <input type="number" name="how-much" placeholder=" No. of Person" class="upper-input">
+                    <input type="text" name="adhar-No." placeholder=" Adhar No." class="upper-input">
+
+
+                </div>
+                <div class="lower">
+                    <input type="text" name="address" placeholder="Enter your address" class="lower-input">
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="upper">
+                    <input type="text" name="number" placeholder=" Mobile number" class="upper-input">
+                    <input type="date" name="arrival-date" placeholder=" Arrival Date" class="upper-input">
+                    <input type="date" name=" departure-date" placeholder="Departure Date" class="upper-input">
+                    <input type="number" name="no-day" placeholder=" No. of Days" class="upper-input">
+                </div>
+                <div class="lower">
+                    <input type="text" name="message" placeholder="Enter your message" class="lower-input">
+                </div>
+                <button class="btn" onclick="pagePrint(myform)">Book Now</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
